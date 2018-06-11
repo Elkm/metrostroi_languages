@@ -1,48 +1,48 @@
 return [[
 #D/E-based types
 
-[en]
+[cz]
 
 #Cameras:
-Train.702.Breakers1 = Battery switch
-Train.702.Breakers2 = Lighting switches
-Train.702.Breakers3 = Main breaker
-Train.703.Breakers1 = Battery switch
-Train.703.Breakers2 = Main switch and lighting switches
-Train.703.Parking   = Parking brake, UAVA
-Train.703.RCARS     = RC-1: ARS circuits disconnector
-Train.703.AVU       = AVU block
+Train.702.Breakers1 = Baterie
+Train.702.Breakers2 = Osvětlení
+Train.702.Breakers3 = Hlavní jistič
+Train.703.Breakers1 = Baterie
+Train.703.Breakers2 = Hlavní jistič, osvětlení
+Train.703.Parking   = Parkovací brzda, Autostop (UAVA)
+Train.703.RCARS     = RC-1: Odpojovač řídících obvodů ARS
+Train.703.AVU       = Panel AVU
 Train.710.VU        = @[Common.ALL.VU]
 
 #######Buttons###########
 #Common
-Common.703.ParkingBrakeLeft     = Release the parking brake
-Common.703.ParkingBrakeRight    = Apply the parking brake
-Common.703.KSD                  = KSD: Doors interlock control button
+Common.703.ParkingBrakeLeft     = Odbrzdit ruční brzdu
+Common.703.ParkingBrakeRight    = Zabrzdit ruční brzdu
+Common.703.KSD                  = KSD: Tlačítko kontroly blokování dveří
 Common.703.SD                   = @[Common.502.SDW]
-Common.703.VU1                  = Cabin heater
-Common.703.VU2                  = Emergency lighting
-Common.703.VU3                  = Cabin lighting
-Common.703.AV                   = Main breaker (high voltage circuits)
-Common.703.LOn                  = Enable lighting
-Common.703.LOff                 = Disable lighting
-Common.703.KRR                  = KRR: Rotate RK to the first position #FIXME
-Common.703.RUT                  = RUT adjustment (reduced acceleration)
-Common.707.SEQ                  = Rheostat controller motion lamp
-Common.707.TAH                  = TAH: Emergency drive mode for driving without ARS
-Common.710.RK                   = Rheostat controller is in intermediate position
+Common.703.VU1                  = Vytápění kabiny
+Common.703.VU2                  = Osvětlení nouze
+Common.703.VU3                  = Osvětlení kabiny
+Common.703.AV                   = Hlavní jistič (vysokonapěťový obvod)
+Common.703.LOn                  = Zapnout osvětlení
+Common.703.LOff                 = Vypnout osvětlení
+Common.703.KRR                  = KRR: Tlačítko obracení reversů do první pozice
+Common.703.RUT                  = Regulace RUT (pomalejší akcelerace)
+Common.707.SEQ                  = Kontrolka rotování reostatu kontroléru
+Common.707.TAH                  = TAH: Nouzová jízda bez ARS
+Common.710.RK                   = Reostat kontroléru je ve střední poloze
 
-Common.710.SAMMSchemeOff        = SAMM stop button
-Common.710.SAMMStart            = SAMM start button
-Common.710.SAMMReset            = SAMM: Reset button
-Common.710.SAMMXTLamp           = SAMM: Assemble drive/brake circuits by ATO
+Common.710.SAMMSchemeOff        = SAMM: Tlačítko vypnutí trakce RAV
+Common.710.SAMMStart            = SAMM: Tlačítko aktivace RAV
+Common.710.SAMMReset            = SAMM: Resetovat
+Common.710.SAMMXTLamp           = SAMM: Zkompletovat řídící/brzdové obvody RAV
 Common.710.SAMMSignal1          = SAMM: @[Common.ALL.Unsused1]
 Common.710.SAMMSignal2          = SAMM: @[Common.ALL.Unsused1]
-Common.710.SAMMOn               = SAMM: Switch (automatic train operation)
-Common.710.SAMMUnit             = SAMM: Execution unit
-Common.710.SAMMX2               = SAMM: X2 mode
-Common.710.SAMMAhead            = SAMM: Catch-up mode
-Common.710.SAMMAccept           = SAMM: Permission
+Common.710.SAMMOn               = SAMM: Zapnutí systému RAV
+Common.710.SAMMUnit             = SAMM: Zapnutí jednotky RAV
+Common.710.SAMMX2               = SAMM: Režim chodu J2
+Common.710.SAMMAhead            = SAMM: Režim dohánění
+Common.710.SAMMAccept           = SAMM: Souhlas
 
 #gmod_subway_81-702
 Entities.gmod_subway_81-702.Buttons.Battery.VBToggle        = @[Common.ALL.VB] @[Common.ALL.VB2]
@@ -111,56 +111,6 @@ Entities.gmod_subway_81-702.Buttons.BLTLPressure.!BLTLPressure                  
 Entities.gmod_subway_81-702.Buttons.BCPressure.!BCPressure                                  = @[Common.ALL.BCPressure]
 Entities.gmod_subway_81-702.Buttons.HVMeters.!EnginesVoltage                                = @[Common.ALL.EnginesVoltage]
 Entities.gmod_subway_81-702.Buttons.BatteryVoltage.!BatteryVoltage                          = @[Common.ALL.BatteryVoltage]
-
-#gmod_subway_81-702_int
-Entities.gmod_subway_81-702_int.Buttons.Battery.VBToggle        = @[Common.ALL.VB] @[Common.ALL.VB2]
-Entities.gmod_subway_81-702_int.Buttons.AVMain.AVToggle         = @[Common.703.AV]
-Entities.gmod_subway_81-702_int.Buttons.AV1.VU1Toggle           = @[Common.703.VU1]
-Entities.gmod_subway_81-702_int.Buttons.AV1.VU2Toggle           = @[Common.703.VU2]
-Entities.gmod_subway_81-702_int.Buttons.AV1.VU3Toggle           = @[Common.703.VU3]
-
-Entities.gmod_subway_81-702_int.Buttons.VU.VUToggle             = @[Common.ALL.VU]
-Entities.gmod_subway_81-702_int.Buttons.VU.KU1Set               = @[Common.703.LOn]
-Entities.gmod_subway_81-702_int.Buttons.VU.KU2Set               = @[Common.703.LOff]
-Entities.gmod_subway_81-702_int.Buttons.MainB.KU7Toggle         = @[Common.ALL.VUD]
-Entities.gmod_subway_81-702_int.Buttons.MainB.KU6Set            = @[Common.ALL.KDP]
-Entities.gmod_subway_81-702_int.Buttons.MainB.VRPSet            = @[Common.ALL.VRP]
-Entities.gmod_subway_81-702_int.Buttons.MainB.KU3Toggle         = @[Common.ALL.VMK]
-Entities.gmod_subway_81-702_int.Buttons.KU9.KU9Set              = @[Common.703.KSD]
-Entities.gmod_subway_81-702_int.Buttons.KU5.KU5Set              = @[Common.ALL.KRZD]
-Entities.gmod_subway_81-702_int.Buttons.MainL.!RedRP            = @[Common.ALL.RRP]
-Entities.gmod_subway_81-702_int.Buttons.MainL.!GreenRP          = @[Common.ALL.GRP]
-Entities.gmod_subway_81-702_int.Buttons.MainL.!Blue             = @[Common.703.SD]
-Entities.gmod_subway_81-702_int.Buttons.VU.SNSet                = @[Common.ALL.KSN]
-
-Entities.gmod_subway_81-702_int.Buttons.HelperPanel.KU10Set         = @[Common.ALL.KDL]
-Entities.gmod_subway_81-702_int.Buttons.HelperPanel.KU8Toggle       = @[Common.ALL.VUD2]
-
-Entities.gmod_subway_81-702_int.Buttons.Stopkran.EmergencyBrakeValveToggle                      = @[Common.ALL.EmergencyBrakeValve]
-Entities.gmod_subway_81-702_int.Buttons.ParkingBrake.ParkingBrakeLeft                           = @[Common.703.ParkingBrakeLeft]
-Entities.gmod_subway_81-702_int.Buttons.ParkingBrake.ParkingBrakeRight                          = @[Common.703.ParkingBrakeRight]
-Entities.gmod_subway_81-702_int.Buttons.UAVAPanel.UAVAToggle                                    = @[Common.ALL.UAVA]
-Entities.gmod_subway_81-702_int.Buttons.UAVAPanel.UAVAContactSet                                = @[Common.ALL.UAVAContact]
-Entities.gmod_subway_81-702_int.Buttons.DriverValveBLDisconnect.DriverValveBLDisconnectToggle   = @[Common.ALL.DriverValveBLDisconnect]
-Entities.gmod_subway_81-702_int.Buttons.DriverValveTLDisconnect.DriverValveTLDisconnectToggle   = @[Common.ALL.DriverValveTLDisconnect]
-Entities.gmod_subway_81-702_int.Buttons.FrontPneumatic.FrontBrakeLineIsolationToggle            = @[Common.ALL.FrontBrakeLineIsolationToggle]
-Entities.gmod_subway_81-702_int.Buttons.FrontPneumatic.FrontTrainLineIsolationToggle            = @[Common.ALL.FrontTrainLineIsolationToggle]
-Entities.gmod_subway_81-702_int.Buttons.RearPneumatic.RearTrainLineIsolationToggle              = @[Common.ALL.RearTrainLineIsolationToggle]
-Entities.gmod_subway_81-702_int.Buttons.RearPneumatic.RearBrakeLineIsolationToggle              = @[Common.ALL.RearBrakeLineIsolationToggle]
-Entities.gmod_subway_81-702_int.Buttons.GV.GVToggle                                             = @[Common.ALL.GV]
-Entities.gmod_subway_81-702_int.Buttons.AirDistributor.AirDistributorDisconnectToggle           = @[Common.ALL.AirDistributor]
-Entities.gmod_subway_81-702_int.Buttons.PassengerDoor.PassengerDoor                             = @[Common.ALL.CabinDoor]
-Entities.gmod_subway_81-702_int.Buttons.PassengerDoor1.PassengerDoor                            = @[Common.ALL.CabinDoor]
-Entities.gmod_subway_81-702_int.Buttons.FrontDoor.FrontDoor                                     = @[Common.ALL.FrontDoor]
-Entities.gmod_subway_81-702_int.Buttons.RearDoor.RearDoor                                       = @[Common.ALL.RearDoor]
-Entities.gmod_subway_81-702_int.Buttons.CabinDoor.CabinDoor                                     = @[Common.ALL.CabinDoor]
-
-Entities.gmod_subway_81-702_int.Buttons.Speedometer.!Speedometer                                = @[Common.ALL.Speedometer]
-
-Entities.gmod_subway_81-702_int.Buttons.BLTLPressure.!BLTLPressure                              = @[Common.ALL.BLTLPressure]
-Entities.gmod_subway_81-702_int.Buttons.BCPressure.!BCPressure                                  = @[Common.ALL.BCPressure]
-Entities.gmod_subway_81-702_int.Buttons.HVMeters.!EnginesVoltage                                = @[Common.ALL.EnginesVoltage]
-Entities.gmod_subway_81-702_int.Buttons.BatteryVoltage.!BatteryVoltage                          = @[Common.ALL.BatteryVoltage]
 
 #gmod_subway_81-703
 Entities.gmod_subway_81-703.Buttons.AVMain.AVToggle     = @[Common.703.AV]
@@ -236,63 +186,6 @@ Entities.gmod_subway_81-703.Buttons.BCPressure.!BCPressure                      
 Entities.gmod_subway_81-703.Buttons.HVMeters.!EnginesVoltage                                = @[Common.ALL.EnginesVoltage]
 Entities.gmod_subway_81-703.Buttons.HVMeters.!EnginesCurrent                                = @[Common.ALL.EnginesCurrent]
 Entities.gmod_subway_81-703.Buttons.BatteryVoltage.!BatteryVoltage                          = @[Common.ALL.BatteryVoltage]
-
-#gmod_subway_81-703_int
-Entities.gmod_subway_81-703_int.Buttons.AVMain.AVToggle     = @[Common.703.AV]
-Entities.gmod_subway_81-703_int.Buttons.Battery.VBToggle    = @[Common.ALL.VB] @[Common.ALL.VB2]
-Entities.gmod_subway_81-703_int.Buttons.AV1.VU1Toggle       = @[Common.703.VU1]
-Entities.gmod_subway_81-703_int.Buttons.AV1.VU2Toggle       = @[Common.703.VU2]
-Entities.gmod_subway_81-703_int.Buttons.AV1.VU3Toggle       = @[Common.703.VU3]
-
-Entities.gmod_subway_81-703_int.Buttons.VU.VUToggle         = @[Common.ALL.VU]
-Entities.gmod_subway_81-703_int.Buttons.Main.RRP            = @[Common.ALL.RRP]
-Entities.gmod_subway_81-703_int.Buttons.Main.GRP            = @[Common.ALL.GRP]
-Entities.gmod_subway_81-703_int.Buttons.Main.SD             = @[Common.703.SD]
-Entities.gmod_subway_81-703_int.Buttons.Main.KU4Set         = @[Common.703.LOn]
-Entities.gmod_subway_81-703_int.Buttons.Main.KU5Set         = @[Common.703.LOff]
-Entities.gmod_subway_81-703_int.Buttons.Main.KU9Set         = @[Common.ALL.VRP]
-Entities.gmod_subway_81-703_int.Buttons.Main.KU8Set         = @[Common.ALL.KSN]
-Entities.gmod_subway_81-703_int.Buttons.Main.KU10Set        = @[Common.ALL.KRZD]
-Entities.gmod_subway_81-703_int.Buttons.Main.KU11Set        = @[Common.703.KSD]
-Entities.gmod_subway_81-703_int.Buttons.Main.KU7Set         = @[Common.ALL.KDP]
-Entities.gmod_subway_81-703_int.Buttons.Main.KU7KToggle     = @[Common.ALL.KDPK]
-Entities.gmod_subway_81-703_int.Buttons.Main.KU6Set         = @[Common.ALL.KDL]
-Entities.gmod_subway_81-703_int.Buttons.Main.KU6KToggle     = @[Common.ALL.KDLK]
-Entities.gmod_subway_81-703_int.Buttons.Main.KU1Toggle      = @[Common.ALL.VMK]
-Entities.gmod_subway_81-703_int.Buttons.Main.KU2Toggle      = @[Common.ALL.VUD]
-Entities.gmod_subway_81-703_int.Buttons.Main.KU12Toggle     = @[Common.703.RUT]
-Entities.gmod_subway_81-703_int.Buttons.VU4.KU16Toggle      = @[Common.ALL.VF2]
-
-Entities.gmod_subway_81-703_int.Buttons.HelperPanel.KU13Set         = @[Common.ALL.KDL]
-Entities.gmod_subway_81-703_int.Buttons.HelperPanel.KU3Toggle       = @[Common.ALL.VUD2]
-
-Entities.gmod_subway_81-703_int.Buttons.Stopkran.EmergencyBrakeValveToggle                      = @[Common.ALL.EmergencyBrakeValve]
-Entities.gmod_subway_81-703_int.Buttons.ParkingBrake.ParkingBrakeLeft                           = @[Common.703.ParkingBrakeLeft]
-Entities.gmod_subway_81-703_int.Buttons.ParkingBrake.ParkingBrakeRight                          = @[Common.703.ParkingBrakeRight]
-Entities.gmod_subway_81-703_int.Buttons.UAVAPanel.UAVAToggle                                    = @[Common.ALL.UAVA]
-Entities.gmod_subway_81-703_int.Buttons.UAVAPanel.UAVAContactSet                                = @[Common.ALL.UAVAContact]
-Entities.gmod_subway_81-703_int.Buttons.DriverValveBLDisconnect.DriverValveBLDisconnectToggle   = @[Common.ALL.DriverValveBLDisconnect]
-Entities.gmod_subway_81-703_int.Buttons.DriverValveTLDisconnect.DriverValveTLDisconnectToggle   = @[Common.ALL.DriverValveTLDisconnect]
-Entities.gmod_subway_81-703_int.Buttons.FrontPneumatic.FrontBrakeLineIsolationToggle            = @[Common.ALL.FrontBrakeLineIsolationToggle]
-Entities.gmod_subway_81-703_int.Buttons.FrontPneumatic.FrontTrainLineIsolationToggle            = @[Common.ALL.FrontTrainLineIsolationToggle]
-Entities.gmod_subway_81-703_int.Buttons.RearPneumatic.RearTrainLineIsolationToggle              = @[Common.ALL.RearTrainLineIsolationToggle]
-Entities.gmod_subway_81-703_int.Buttons.RearPneumatic.RearBrakeLineIsolationToggle              = @[Common.ALL.RearBrakeLineIsolationToggle]
-Entities.gmod_subway_81-703_int.Buttons.GV.GVToggle                                             = @[Common.ALL.GV]
-Entities.gmod_subway_81-703_int.Buttons.AirDistributor.AirDistributorDisconnectToggle           = @[Common.ALL.AirDistributor]
-Entities.gmod_subway_81-703_int.Buttons.PassengerDoor.PassengerDoor                             = @[Common.ALL.CabinDoor]
-Entities.gmod_subway_81-703_int.Buttons.PassengerDoor2.PassengerDoor                            = @[Common.ALL.CabinDoor]
-Entities.gmod_subway_81-703_int.Buttons.FrontDoor.FrontDoor                                     = @[Common.ALL.FrontDoor]
-Entities.gmod_subway_81-703_int.Buttons.RearDoor.RearDoor                                       = @[Common.ALL.RearDoor]
-Entities.gmod_subway_81-703_int.Buttons.CabinDoor.CabinDoor                                     = @[Common.ALL.CabinDoor]                               = @[Common.ALL.LastStation-]
-
-Entities.gmod_subway_81-703_int.Buttons.Speedometer.!Speedometer                                = @[Common.ALL.Speedometer]
-
-Entities.gmod_subway_81-703_int.Buttons.BLTLPressure.!BLTLPressure                              = @[Common.ALL.BLTLPressure]
-Entities.gmod_subway_81-703_int.Buttons.BCPressure.!BCPressure                                  = @[Common.ALL.BCPressure]
-Entities.gmod_subway_81-703_int.Buttons.HVMeters.!EnginesVoltage                                = @[Common.ALL.EnginesVoltage]
-Entities.gmod_subway_81-703_int.Buttons.HVMeters.!EnginesCurrent                                = @[Common.ALL.EnginesCurrent]
-Entities.gmod_subway_81-703_int.Buttons.BatteryVoltage.!BatteryVoltage                          = @[Common.ALL.BatteryVoltage]
-
 
 #gmod_subway_ezh
 Entities.gmod_subway_ezh.Buttons.AVMain.AVToggle     = @[Common.703.AV]
@@ -442,6 +335,7 @@ Entities.gmod_subway_ezh.Buttons.Route.RouteNumber2-                            
 Entities.gmod_subway_ezh.Buttons.LastStation.LastStation+                                = @[Common.ALL.LastStation+]
 Entities.gmod_subway_ezh.Buttons.LastStation.LastStation-                                = @[Common.ALL.LastStation-]
 
+
 Entities.gmod_subway_ezh.Buttons.Speedometer.!Speedometer                                = @[Common.ALL.Speedometer]
 
 Entities.gmod_subway_ezh.Buttons.BLTLPressure.!BLTLPressure                              = @[Common.ALL.BLTLPressure]
@@ -449,58 +343,6 @@ Entities.gmod_subway_ezh.Buttons.BCPressure.!BCPressure                         
 Entities.gmod_subway_ezh.Buttons.HVMeters.!EnginesVoltage                                = @[Common.ALL.EnginesVoltage]
 Entities.gmod_subway_ezh.Buttons.HVMeters.!EnginesCurrent                                = @[Common.ALL.EnginesCurrent]
 Entities.gmod_subway_ezh.Buttons.BatteryVoltage.!BatteryVoltage                          = @[Common.ALL.BatteryVoltage]
-
-#gmod_subway_ezh1
-Entities.gmod_subway_ezh1.Buttons.Main.KU4Set         = @[Common.703.LOn]
-Entities.gmod_subway_ezh1.Buttons.Main.KU5Set         = @[Common.703.LOff]
-Entities.gmod_subway_ezh1.Buttons.Main.KU9Set         = @[Common.ALL.VRP]
-Entities.gmod_subway_ezh1.Buttons.Main.KU8Set         = @[Common.ALL.KSN]
-Entities.gmod_subway_ezh1.Buttons.Main.KU10Set        = @[Common.ALL.KRZD]
-Entities.gmod_subway_ezh1.Buttons.Main.KU6Set         = @[Common.ALL.KDL]
-Entities.gmod_subway_ezh1.Buttons.Main.KU7Set         = @[Common.ALL.KDP]
-Entities.gmod_subway_ezh1.Buttons.Main.KU1Toggle      = @[Common.ALL.VMK]
-Entities.gmod_subway_ezh1.Buttons.Main.KU2Toggle      = @[Common.ALL.VUD]
-
-
-Entities.gmod_subway_ezh1.Buttons.AVMain.AVToggle     = @[Common.703.AV]
-Entities.gmod_subway_ezh1.Buttons.Battery.VBToggle    = @[Common.ALL.VB] @[Common.ALL.VB2]
-Entities.gmod_subway_ezh1.Buttons.AV1.VU1Toggle       = @[Common.703.VU1]
-Entities.gmod_subway_ezh1.Buttons.AV1.VU2Toggle       = @[Common.703.VU2]
-Entities.gmod_subway_ezh1.Buttons.AV1.VU3Toggle       = @[Common.703.VU3]
-
-Entities.gmod_subway_ezh1.Buttons.VU4.KU16Toggle      = @[Common.ALL.VF2]
-Entities.gmod_subway_ezh1.Buttons.VU.VUToggle         = @[Common.ALL.VU]
-
-Entities.gmod_subway_ezh1.Buttons.HelperPanel.KU13Set         = @[Common.ALL.KDL]
-Entities.gmod_subway_ezh1.Buttons.HelperPanel.KU3Toggle       = @[Common.ALL.VUD2]
-
-Entities.gmod_subway_ezh1.Buttons.Main.!GRP             = @[Common.ALL.RRP]
-Entities.gmod_subway_ezh1.Buttons.Main.!RRP             = @[Common.ALL.GRP]
-Entities.gmod_subway_ezh1.Buttons.Main.!SD              = @[Common.703.SD]
-
-Entities.gmod_subway_ezh1.Buttons.Stopkran.EmergencyBrakeValveToggle                      = @[Common.ALL.EmergencyBrakeValve]
-Entities.gmod_subway_ezh1.Buttons.ParkingBrake.ParkingBrakeLeft                           = @[Common.703.ParkingBrakeLeft]
-Entities.gmod_subway_ezh1.Buttons.ParkingBrake.ParkingBrakeRight                          = @[Common.703.ParkingBrakeRight]
-Entities.gmod_subway_ezh1.Buttons.DriverValveBLDisconnect.DriverValveBLDisconnectToggle   = @[Common.ALL.DriverValveBLDisconnect]
-Entities.gmod_subway_ezh1.Buttons.DriverValveTLDisconnect.DriverValveTLDisconnectToggle   = @[Common.ALL.DriverValveTLDisconnect]
-Entities.gmod_subway_ezh1.Buttons.FrontPneumatic.FrontBrakeLineIsolationToggle            = @[Common.ALL.FrontBrakeLineIsolationToggle]
-Entities.gmod_subway_ezh1.Buttons.FrontPneumatic.FrontTrainLineIsolationToggle            = @[Common.ALL.FrontTrainLineIsolationToggle]
-Entities.gmod_subway_ezh1.Buttons.RearPneumatic.RearTrainLineIsolationToggle              = @[Common.ALL.RearTrainLineIsolationToggle]
-Entities.gmod_subway_ezh1.Buttons.RearPneumatic.RearBrakeLineIsolationToggle              = @[Common.ALL.RearBrakeLineIsolationToggle]
-Entities.gmod_subway_ezh1.Buttons.GV.GVToggle                                             = @[Common.ALL.GV]
-Entities.gmod_subway_ezh1.Buttons.AirDistributor.AirDistributorDisconnectToggle           = @[Common.ALL.AirDistributor]
-Entities.gmod_subway_ezh1.Buttons.PassengerDoor.PassengerDoor                             = @[Common.ALL.CabinDoor]
-Entities.gmod_subway_ezh1.Buttons.PassengerDoor1.PassengerDoor                            = @[Common.ALL.CabinDoor]
-Entities.gmod_subway_ezh1.Buttons.FrontDoor.FrontDoor                                     = @[Common.ALL.FrontDoor]
-Entities.gmod_subway_ezh1.Buttons.RearDoor.RearDoor                                       = @[Common.ALL.RearDoor]
-Entities.gmod_subway_ezh1.Buttons.CabinDoor.CabinDoor                                     = @[Common.ALL.CabinDoor]
-
-Entities.gmod_subway_ezh1.Buttons.BLTLPressure.!BLTLPressure                              = @[Common.ALL.BLTLPressure]
-Entities.gmod_subway_ezh1.Buttons.BCPressure.!BCPressure                                  = @[Common.ALL.BCPressure]
-Entities.gmod_subway_ezh1.Buttons.HVMeters.!EnginesVoltage                                = @[Common.ALL.EnginesVoltage]
-Entities.gmod_subway_ezh1.Buttons.HVMeters.!EnginesCurrent                                = @[Common.ALL.EnginesCurrent]
-Entities.gmod_subway_ezh1.Buttons.BatteryVoltage.!BatteryVoltage                          = @[Common.ALL.BatteryVoltage]
-
 
 #gmod_subway_ez3
 Entities.gmod_subway_ezh3.Buttons.AVMain.AVToggle       = @[Common.703.AV]
@@ -636,59 +478,6 @@ Entities.gmod_subway_ezh3.Buttons.Panel.!BCPressure                             
 Entities.gmod_subway_ezh3.Buttons.Panel.!HighVoltage                                      = @[Common.ALL.HighVoltage]
 Entities.gmod_subway_ezh3.Buttons.Panel.!EnginesCurrent                                   = @[Common.ALL.EnginesCurrent]
 Entities.gmod_subway_ezh3.Buttons.Panel.!BatteryVoltage                                   = @[Common.ALL.BatteryVoltage]
-
-#gmod_subway_em508t
-Entities.gmod_subway_em508t.Buttons.AVMain.AVToggle     = @[Common.703.AV]
-Entities.gmod_subway_em508t.Buttons.Battery.VBToggle    = @[Common.ALL.VB] @[Common.ALL.VB2]
-Entities.gmod_subway_em508t.Buttons.AV1.VU1Toggle       = @[Common.703.VU1]
-Entities.gmod_subway_em508t.Buttons.AV1.VU2Toggle       = @[Common.703.VU2]
-Entities.gmod_subway_em508t.Buttons.AV1.VU3Toggle       = @[Common.703.VU3]
-
-Entities.gmod_subway_em508t.Buttons.VU14.VU14Toggle     = @[Common.ALL.VF2]
-Entities.gmod_subway_em508t.Buttons.VU.VUToggle         = @[Common.ALL.VU]
-
-Entities.gmod_subway_em508t.Buttons.VU.VUToggle           = @[Common.ALL.VU]
-
-Entities.gmod_subway_em508t.Buttons.Main.KU12Set          = @[Common.ALL.KDL]
-Entities.gmod_subway_em508t.Buttons.Main.KU11Set          = @[Common.703.KSD]
-Entities.gmod_subway_em508t.Buttons.Main.KU9Set           = @[Common.ALL.VRP]
-Entities.gmod_subway_em508t.Buttons.Main.KU8Set           = @[Common.ALL.KSN]
-Entities.gmod_subway_em508t.Buttons.Main.V2Toggle         = @[Common.ALL.VUD]
-Entities.gmod_subway_em508t.Buttons.Main.V1Toggle         = @[Common.ALL.VMK]
-Entities.gmod_subway_em508t.Buttons.Main.V4Set            = @[Common.703.LOn]
-Entities.gmod_subway_em508t.Buttons.Main.V5Set            = @[Common.703.LOff]
-Entities.gmod_subway_em508t.Buttons.Main.KU15Set          = @[Common.ALL.RMK]
-Entities.gmod_subway_em508t.Buttons.Main.KU7Set           = @[Common.ALL.KDP]
-Entities.gmod_subway_em508t.Buttons.Main.V10Set           = @[Common.ALL.KRZD]
-Entities.gmod_subway_em508t.Buttons.Main.!RedRP             = @[Common.ALL.RRP]
-Entities.gmod_subway_em508t.Buttons.Main.!GreenRP           = @[Common.ALL.GRP]
-Entities.gmod_subway_em508t.Buttons.Main.!SD                = @[Common.703.SD]
-
-Entities.gmod_subway_em508t.Buttons.HelperPanel.V6Set         = @[Common.ALL.KDL]
-Entities.gmod_subway_em508t.Buttons.HelperPanel.V3Toggle       = @[Common.ALL.VUD2]
-
-Entities.gmod_subway_em508t.Buttons.Stopkran.EmergencyBrakeValveToggle                      = @[Common.ALL.EmergencyBrakeValve]
-Entities.gmod_subway_em508t.Buttons.ParkingBrake.ParkingBrakeLeft                           = @[Common.703.ParkingBrakeLeft]
-Entities.gmod_subway_em508t.Buttons.ParkingBrake.ParkingBrakeRight                          = @[Common.703.ParkingBrakeRight]
-Entities.gmod_subway_em508t.Buttons.DriverValveBLDisconnect.DriverValveBLDisconnectToggle   = @[Common.ALL.DriverValveBLDisconnect]
-Entities.gmod_subway_em508t.Buttons.DriverValveTLDisconnect.DriverValveTLDisconnectToggle   = @[Common.ALL.DriverValveTLDisconnect]
-Entities.gmod_subway_em508t.Buttons.FrontPneumatic.FrontBrakeLineIsolationToggle            = @[Common.ALL.FrontBrakeLineIsolationToggle]
-Entities.gmod_subway_em508t.Buttons.FrontPneumatic.FrontTrainLineIsolationToggle            = @[Common.ALL.FrontTrainLineIsolationToggle]
-Entities.gmod_subway_em508t.Buttons.RearPneumatic.RearTrainLineIsolationToggle              = @[Common.ALL.RearTrainLineIsolationToggle]
-Entities.gmod_subway_em508t.Buttons.RearPneumatic.RearBrakeLineIsolationToggle              = @[Common.ALL.RearBrakeLineIsolationToggle]
-Entities.gmod_subway_em508t.Buttons.GV.GVToggle                                             = @[Common.ALL.GV]
-Entities.gmod_subway_em508t.Buttons.AirDistributor.AirDistributorDisconnectToggle           = @[Common.ALL.AirDistributor]
-Entities.gmod_subway_em508t.Buttons.PassengerDoor.PassengerDoor                             = @[Common.ALL.CabinDoor]
-Entities.gmod_subway_em508t.Buttons.PassengerDoor1.PassengerDoor                            = @[Common.ALL.CabinDoor]
-Entities.gmod_subway_em508t.Buttons.FrontDoor.FrontDoor                                     = @[Common.ALL.FrontDoor]
-Entities.gmod_subway_em508t.Buttons.RearDoor.RearDoor                                       = @[Common.ALL.RearDoor]
-Entities.gmod_subway_em508t.Buttons.CabinDoor.CabinDoor                                     = @[Common.ALL.CabinDoor]
-
-Entities.gmod_subway_em508t.Buttons.BLTLPressure.!BLTLPressure                              = @[Common.ALL.BLTLPressure]
-Entities.gmod_subway_em508t.Buttons.BCPressure.!BCPressure                                  = @[Common.ALL.BCPressure]
-Entities.gmod_subway_em508t.Buttons.HVMeters.!EnginesVoltage                                = @[Common.ALL.EnginesVoltage]
-Entities.gmod_subway_em508t.Buttons.HVMeters.!EnginesCurrent                                = @[Common.ALL.EnginesCurrent]
-Entities.gmod_subway_em508t.Buttons.BatteryVoltage.!BatteryVoltage                          = @[Common.ALL.BatteryVoltage]
 
 #Spawner:
 Entities.gmod_subway_81-702.Spawner.Texture.Name        = @[Common.Spawner.Texture]

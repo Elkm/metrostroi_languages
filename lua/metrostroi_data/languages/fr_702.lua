@@ -1,47 +1,47 @@
 return [[
 #D/E-based types
 
-[en]
+[fr]
 
 #Cameras:
-Train.702.Breakers1 = Battery switch
-Train.702.Breakers2 = Lighting switches
-Train.702.Breakers3 = Main breaker
-Train.703.Breakers1 = Battery switch
+Train.702.Breakers1 = Interrupteur de batterie
+Train.702.Breakers2 = Interrupteurs d'éclairage
+Train.702.Breakers3 = Disjoncteur principal
+Train.703.Breakers1 = Interrupteur de batterie
 Train.703.Breakers2 = Main switch and lighting switches
-Train.703.Parking   = Parking brake, UAVA
-Train.703.RCARS     = RC-1: ARS circuits disconnector
-Train.703.AVU       = AVU block
+Train.703.Parking   = Frein de parking, UAVA
+Train.703.RCARS     = RC-1: Déconncteur des circuits ARS
+Train.703.AVU       = Bloc AVU
 Train.710.VU        = @[Common.ALL.VU]
 
 #######Buttons###########
 #Common
-Common.703.ParkingBrakeLeft     = Release the parking brake
-Common.703.ParkingBrakeRight    = Apply the parking brake
-Common.703.KSD                  = KSD: Doors interlock control button
+Common.703.ParkingBrakeLeft     = Relâcher le frein de parking
+Common.703.ParkingBrakeRight    = Appliquer le frein de parking
+Common.703.KSD                  = KSD: Contrôle du verouillage des portes
 Common.703.SD                   = @[Common.502.SDW]
-Common.703.VU1                  = Cabin heater
-Common.703.VU2                  = Emergency lighting
-Common.703.VU3                  = Cabin lighting
-Common.703.AV                   = Main breaker (high voltage circuits)
-Common.703.LOn                  = Enable lighting
-Common.703.LOff                 = Disable lighting
-Common.703.KRR                  = KRR: Rotate RK to the first position #FIXME
-Common.703.RUT                  = RUT adjustment (reduced acceleration)
-Common.707.SEQ                  = Rheostat controller motion lamp
-Common.707.TAH                  = TAH: Emergency drive mode for driving without ARS
-Common.710.RK                   = Rheostat controller is in intermediate position
+Common.703.VU1                  = Chauffage cabine
+Common.703.VU2                  = Eclairage d'urgence
+Common.703.VU3                  = Eclairage cabine
+Common.703.AV                   = Disjoncteur principal (circuits haute tension)
+Common.703.LOn                  = Activer l'éclairage
+Common.703.LOff                 = Désactiver l'éclairage
+Common.703.KRR                  = KRR: Tourner le RK à la première position
+Common.703.RUT                  = Ajustement RUT (accéleration réduite)
+Common.707.SEQ                  = Lampe de mouvement de la manette rhéostat
+Common.707.TAH                  = TAH: Mode de conduite d'urgence sans ARS
+Common.710.RK                   = La manette rhéostat est en position intermédiaire
 
-Common.710.SAMMSchemeOff        = SAMM stop button
-Common.710.SAMMStart            = SAMM start button
-Common.710.SAMMReset            = SAMM: Reset button
-Common.710.SAMMXTLamp           = SAMM: Assemble drive/brake circuits by ATO
+Common.710.SAMMSchemeOff        = Bouton stop SAMM
+Common.710.SAMMStart            = Bouton start SAMM
+Common.710.SAMMReset            = Bouton reset SAMM
+Common.710.SAMMXTLamp           = SAMM: Circuits conduite/frein connectés par l'ATO
 Common.710.SAMMSignal1          = SAMM: @[Common.ALL.Unsused1]
 Common.710.SAMMSignal2          = SAMM: @[Common.ALL.Unsused1]
-Common.710.SAMMOn               = SAMM: Switch (automatic train operation)
-Common.710.SAMMUnit             = SAMM: Execution unit
-Common.710.SAMMX2               = SAMM: X2 mode
-Common.710.SAMMAhead            = SAMM: Catch-up mode
+Common.710.SAMMOn               = SAMM: Interrupteur (ATO : conduite automatique)
+Common.710.SAMMUnit             = SAMM: Unité d'éxecution
+Common.710.SAMMX2               = SAMM: Mode X2
+Common.710.SAMMAhead            = SAMM: Mode rattrapage
 Common.710.SAMMAccept           = SAMM: Permission
 
 #gmod_subway_81-702

@@ -1,48 +1,48 @@
 return [[
 #D/E-based types
 
-[en]
+[fin]
 
 #Cameras:
-Train.702.Breakers1 = Battery switch
-Train.702.Breakers2 = Lighting switches
-Train.702.Breakers3 = Main breaker
-Train.703.Breakers1 = Battery switch
-Train.703.Breakers2 = Main switch and lighting switches
-Train.703.Parking   = Parking brake, UAVA
-Train.703.RCARS     = RC-1: ARS circuits disconnector
-Train.703.AVU       = AVU block
+Train.702.Breakers1 = Akun virtakytkin
+Train.702.Breakers2 = Valaistuksen kytkin
+Train.702.Breakers3 = Pääkatkaisin
+Train.703.Breakers1 = Akun virtakytkin
+Train.703.Breakers2 = Pääkytkin ja valaistuskytkimet
+Train.703.Parking   = Käsijarru, UAVA
+Train.703.RCARS     = RC-1: ARS piirien katkaisin
+Train.703.AVU       = AVU esto
 Train.710.VU        = @[Common.ALL.VU]
 
 #######Buttons###########
 #Common
-Common.703.ParkingBrakeLeft     = Release the parking brake
-Common.703.ParkingBrakeRight    = Apply the parking brake
-Common.703.KSD                  = KSD: Doors interlock control button
+Common.703.ParkingBrakeLeft     = Vapauta seisontajarru
+Common.703.ParkingBrakeRight    = Kiinnitä seisontajarru
+Common.703.KSD                  = KSD: Ovien sisäisen lukituksen nappi
 Common.703.SD                   = @[Common.502.SDW]
-Common.703.VU1                  = Cabin heater
-Common.703.VU2                  = Emergency lighting
-Common.703.VU3                  = Cabin lighting
-Common.703.AV                   = Main breaker (high voltage circuits)
-Common.703.LOn                  = Enable lighting
-Common.703.LOff                 = Disable lighting
-Common.703.KRR                  = KRR: Rotate RK to the first position #FIXME
-Common.703.RUT                  = RUT adjustment (reduced acceleration)
-Common.707.SEQ                  = Rheostat controller motion lamp
-Common.707.TAH                  = TAH: Emergency drive mode for driving without ARS
-Common.710.RK                   = Rheostat controller is in intermediate position
+Common.703.VU1                  = Ohjaamon lämmitys
+Common.703.VU2                  = Hätävalaistus
+Common.703.VU3                  = Ohjaamon valo
+Common.703.AV                   = Päävirtakytkin 
+Common.703.LOn                  = Valaistus päälle
+Common.703.LOff                 = Valaistus pois
+Common.703.KRR                  = KRR: Siirrä RK ensimmäiseen positioon
+Common.703.RUT                  = RUT säätö 
+Common.707.SEQ                  = Reostaattisäätimen merkkivalo
+Common.707.TAH                  = TAH: Hätäajo moodi ilman  ARS
+Common.710.RK                   = Reostattisäädin on keskimmäisessä positiossa is in intermediate position
 
-Common.710.SAMMSchemeOff        = SAMM stop button
-Common.710.SAMMStart            = SAMM start button
-Common.710.SAMMReset            = SAMM: Reset button
-Common.710.SAMMXTLamp           = SAMM: Assemble drive/brake circuits by ATO
+Common.710.SAMMSchemeOff        = SAMM sammutus
+Common.710.SAMMStart            = SAMM käynnistys
+Common.710.SAMMReset            = SAMM: Resetointi
+Common.710.SAMMXTLamp           = SAMM: Aktivoi käyttö-/jarrupiirit  ATOlla
 Common.710.SAMMSignal1          = SAMM: @[Common.ALL.Unsused1]
 Common.710.SAMMSignal2          = SAMM: @[Common.ALL.Unsused1]
-Common.710.SAMMOn               = SAMM: Switch (automatic train operation)
-Common.710.SAMMUnit             = SAMM: Execution unit
-Common.710.SAMMX2               = SAMM: X2 mode
-Common.710.SAMMAhead            = SAMM: Catch-up mode
-Common.710.SAMMAccept           = SAMM: Permission
+Common.710.SAMMOn               = SAMM: Kytkin automaattiseen ajoon
+Common.710.SAMMUnit             = SAMM: Suoritusyksikkö
+Common.710.SAMMX2               = SAMM: X2 tila
+Common.710.SAMMAhead            = SAMM: Kiihdytys tila
+Common.710.SAMMAccept           = SAMM: Lupa
 
 #gmod_subway_81-702
 Entities.gmod_subway_81-702.Buttons.Battery.VBToggle        = @[Common.ALL.VB] @[Common.ALL.VB2]

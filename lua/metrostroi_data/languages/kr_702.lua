@@ -1,48 +1,48 @@
 return [[
 #D/E-based types
 
-[en]
+[kr]
 
 #Cameras:
-Train.702.Breakers1 = Battery switch
-Train.702.Breakers2 = Lighting switches
-Train.702.Breakers3 = Main breaker
-Train.703.Breakers1 = Battery switch
-Train.703.Breakers2 = Main switch and lighting switches
-Train.703.Parking   = Parking brake, UAVA
-Train.703.RCARS     = RC-1: ARS circuits disconnector
-Train.703.AVU       = AVU block
+Train.702.Breakers1 = 배터리 스위치
+Train.702.Breakers2 = 조명 스위치류
+Train.702.Breakers3 = 주 회로 차단기
+Train.703.Breakers1 = 배터리 스위치
+Train.703.Breakers2 = 주 회로 차단기, 조명 스위치류
+Train.703.Parking   = 주차 제동기, UAVA
+Train.703.RCARS     = RC-1: ARS 회로 차단기
+Train.703.AVU       = AVU 블럭
 Train.710.VU        = @[Common.ALL.VU]
 
 #######Buttons###########
 #Common
-Common.703.ParkingBrakeLeft     = Release the parking brake
-Common.703.ParkingBrakeRight    = Apply the parking brake
-Common.703.KSD                  = KSD: Doors interlock control button
+Common.703.ParkingBrakeLeft     = 주차 제동 완해
+Common.703.ParkingBrakeRight    = 주차 제동 체결
+Common.703.KSD                  = KSD: 출입문 연동 제어 버튼
 Common.703.SD                   = @[Common.502.SDW]
-Common.703.VU1                  = Cabin heater
-Common.703.VU2                  = Emergency lighting
-Common.703.VU3                  = Cabin lighting
-Common.703.AV                   = Main breaker (high voltage circuits)
-Common.703.LOn                  = Enable lighting
-Common.703.LOff                 = Disable lighting
-Common.703.KRR                  = KRR: Rotate RK to the first position #FIXME
-Common.703.RUT                  = RUT adjustment (reduced acceleration)
-Common.707.SEQ                  = Rheostat controller motion lamp
-Common.707.TAH                  = TAH: Emergency drive mode for driving without ARS
-Common.710.RK                   = Rheostat controller is in intermediate position
+Common.703.VU1                  = 운전실 난방기
+Common.703.VU2                  = 비상등
+Common.703.VU3                  = 운전실 조명
+Common.703.AV                   = 주 회로 차단기 (고전압 회로)
+Common.703.LOn                  = 조명 켜기
+Common.703.LOff                 = 조명 끄기
+Common.703.KRR                  = KRR: RK를 첫번째 위치로 회전
+Common.703.RUT                  = RUT 조정 (가속력 감소)
+Common.707.SEQ                  = 가변 저항 제어기 동작 표시등
+Common.707.TAH                  = TAH: 비상 운전 모드 (ARS 미사용 주행)
+Common.710.RK                   = 가변 저항 제어기가 중간 위치에 있음
 
-Common.710.SAMMSchemeOff        = SAMM stop button
-Common.710.SAMMStart            = SAMM start button
-Common.710.SAMMReset            = SAMM: Reset button
-Common.710.SAMMXTLamp           = SAMM: Assemble drive/brake circuits by ATO
+Common.710.SAMMSchemeOff        = SAMM 정지 버튼
+Common.710.SAMMStart            = SAMM 시작 버튼
+Common.710.SAMMReset            = SAMM: 리셋 버튼
+Common.710.SAMMXTLamp           = SAMM: ATO에 의해 구동/제동 회로 연결
 Common.710.SAMMSignal1          = SAMM: @[Common.ALL.Unsused1]
 Common.710.SAMMSignal2          = SAMM: @[Common.ALL.Unsused1]
-Common.710.SAMMOn               = SAMM: Switch (automatic train operation)
-Common.710.SAMMUnit             = SAMM: Execution unit
-Common.710.SAMMX2               = SAMM: X2 mode
-Common.710.SAMMAhead            = SAMM: Catch-up mode
-Common.710.SAMMAccept           = SAMM: Permission
+Common.710.SAMMOn               = SAMM: 스위치 (ATO:열차 자동 운전)
+Common.710.SAMMUnit             = SAMM: 실행 유닛
+Common.710.SAMMX2               = SAMM: X2 모드
+Common.710.SAMMAhead            = SAMM: 회복 운전 모드
+Common.710.SAMMAccept           = SAMM: 승인
 
 #gmod_subway_81-702
 Entities.gmod_subway_81-702.Buttons.Battery.VBToggle        = @[Common.ALL.VB] @[Common.ALL.VB2]

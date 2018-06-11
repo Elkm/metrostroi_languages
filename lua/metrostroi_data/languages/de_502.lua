@@ -1,61 +1,51 @@
-return [[
+﻿return [[
 #81-502
-
-[pl]
-
+[de]
 #######Buttons###########
 #Common
-Common.502.KS                   = Kontrolka pracy KSAUP
-Common.502.AV                   = Kontrolka jazdy samoczynnej
-Common.502.SD                   = Kontrolka sygnalizacji drzwi składu (drzwi zamknięte)
-Common.502.SDW                  = Kontrolka sygnalizacji drzwi wagonu (drzwo otwarte)
-Common.502.L3w                  = Kontrolka przewodu 3. (tryb X3)
-Common.502.L4w                  = Kontrolka przewodu 4. (jazda w tył)
-Common.502.L5w                  = Kontrolka przewodu 5. (jazda w przód)
-Common.502.L16w                 = Kontrolka przewodu 16. (zamknięcie drzwi)
-Common.502.L20w                 = Kontrolka przewodu 20. (zamknięcie LK2 i LK5, "miękkie" wyłączenie silników)
-Common.502.L23w                 = Kontrolka przewodu 23. (sterowanie sprzężarki)
-Common.502.RK1                  = Kontrolka pierwszej pozycji RK
-Common.502.BRD                  = Kontrolka niesprawności drzwi
-Common.502.KOS                  = KB: Przycisk ograniczenia prędkości (przycisk czuwaka)
-Common.502.VAK                  = AK: Przycisk załączania rozruchu w jeździe awaryjnej
-Common.502.LRU                  = Kontrolka załączenia silników w sterowaniu rezerwowym
+Common.502.KS                   = KSAUP aktiv
+Common.502.AV                   = Autonomes fahren ist aktiv.
+Common.502.SD                   = SD: Leuchtmelder der Tueren (Tueren sind verschlossen)
+Common.502.SDW                  = SD: Leuchtmelder der Tueren (Tueren sind offen)
+Common.502.L3w                  = 3. Leuchtmelder (X3 modus)
+Common.502.L4w                  = 4. Leuchtmelder (Fahrtrichtung nach hinten)
+Common.502.L5w                  = 5. Leuchtmelder (Fahrtrichtung vorwärts)
+Common.502.L16w                 = 16. Leuchtmelder (Türen sind verriegelt)
+Common.502.L20w                 = 20. Leuchtmelder (LK2 and LK5 closure, smooth disengage)
+Common.502.L23w                 = 23. Leuchtmelder (Kompressorsteuerung)
+Common.502.RK1                  = Steuerung der ersten Schaltwerkposition
+Common.502.BRD                  = Türstörung
+Common.502.KOS                  = KB: Wachsamtaste
+Common.502.VAK                  = AK: Stromkreise für Notfallfahrt schließen
+Common.502.LRU                  = Stromkreise für Notfahrmodus geschlossen
 #gmod_subway_81-502
-Entities.gmod_subway_81-502.Buttons.VBA.VBAToggle = Wyłącznik baterii jazdy samoczynnej
-
-Entities.gmod_subway_81-502.Buttons.AV.VRUToggle = VRU: Wyłącznik sterowania rezerwowego
-Entities.gmod_subway_81-502.Buttons.AV.KPVUToggle = KPVU: Wyłączenie pneumatycznego odłącznika sterowania
-Entities.gmod_subway_81-502.Buttons.AV.KSDToggle = KSD: Wyłącznik kontroli pracy blokad drzwi
+Entities.gmod_subway_81-502.Buttons.VBA.VBAToggle = Batterie für das autonomes Fahren an/aus
+Entities.gmod_subway_81-502.Buttons.AV.VRUToggle = VRU: Notfall-Fahrmodus
+Entities.gmod_subway_81-502.Buttons.AV.KPVUToggle = KPVU: Überbrückung von Druckluftsystemen ausschalten
+Entities.gmod_subway_81-502.Buttons.AV.KSDToggle = KSD: Türverriegelung deaktivieren
 Entities.gmod_subway_81-502.Buttons.AV.KAHToggle = @[Common.ALL.VAH]
 Entities.gmod_subway_81-502.Buttons.AV.KADToggle = @[Common.ALL.VAD]
 Entities.gmod_subway_81-502.Buttons.AV.OVTToggle = @[Common.ALL.OVT]
 Entities.gmod_subway_81-502.Buttons.AV.VKFToggle = @[Common.ALL.VKF]
-
-
-Entities.gmod_subway_81-502.Buttons.RCAV3.RCAV3Toggle           = Odłącznik obwodów KSAUP (AV3)
-Entities.gmod_subway_81-502.Buttons.RCAV4.RCAV4Toggle           = Odłącznik obwodów KSAUP (AV4)
-Entities.gmod_subway_81-502.Buttons.RCAV5.RCAV5Toggle           = Odłącznik obwodów KSAUP (AV5)
+Entities.gmod_subway_81-502.Buttons.RCAV3.RCAV3Toggle           = KSAUP Trennschalter (AV3)
+Entities.gmod_subway_81-502.Buttons.RCAV4.RCAV4Toggle           = KSAUP Trennschalter (AV4)
+Entities.gmod_subway_81-502.Buttons.RCAV5.RCAV5Toggle           = KSAUP Trennschalter (AV5)
 Entities.gmod_subway_81-502.Buttons.RCARS.RCARSToggle           = @[Common.ALL.RCARS]
 Entities.gmod_subway_81-502.Buttons.RCBPS.RCBPSToggle           = @[Common.ALL.RCBPS]
-
 Entities.gmod_subway_81-502.Buttons.VRD2.2:VRDSet               = @[Common.ARS.VRD]
 Entities.gmod_subway_81-502.Buttons.VRD2.!LVRD                  = @[Common.ARS.LRD]
-
 Entities.gmod_subway_81-502.Buttons.AVMain.AVToggle             = @[Common.703.AV]
 Entities.gmod_subway_81-502.Buttons.Battery.VBToggle            = @[Common.ALL.VB] @[Common.ALL.VB2]
 Entities.gmod_subway_81-502.Buttons.AV1.VU1Toggle               = @[Common.703.VU1]
 Entities.gmod_subway_81-502.Buttons.AV1.VU2Toggle               = @[Common.703.VU2]
 Entities.gmod_subway_81-502.Buttons.AV1.VU3Toggle               = @[Common.703.VU3]
 Entities.gmod_subway_81-502.Buttons.UPO.R_UPOToggle             = @[Common.ALL.UPO]
-
 Entities.gmod_subway_81-502.Buttons.VU.VUToggle                 = @[Common.ALL.VU]
-
 Entities.gmod_subway_81-502.Buttons.VRD.VRDToggle               = @[Common.ARS.VRD]
 Entities.gmod_subway_81-502.Buttons.HelperPanel.VDLSet          = @[Common.ALL.KDL]
 Entities.gmod_subway_81-502.Buttons.HelperPanel.KDPHSet         = @[Common.ALL.KDPH]
 Entities.gmod_subway_81-502.Buttons.AV2.VSOSDToggle             = @[Common.ALL.VSOSD]
 Entities.gmod_subway_81-502.Buttons.AV2.VRToggle                = @[Common.ALL.VPR]
-
 Entities.gmod_subway_81-502.Buttons.Speedometer.!Speedometer    = @[Common.ALL.Speedometer]
 Entities.gmod_subway_81-502.Buttons.Lamps1_1.!LLampAutodrive    = @[Common.ALL.Unsused1]
 Entities.gmod_subway_81-502.Buttons.Lamps1_1.!LLamp2            = @[Common.ALL.L2w]
@@ -79,7 +69,6 @@ Entities.gmod_subway_81-502.Buttons.ALSPanel.!ALS_60            = @[Common.ARS.6
 Entities.gmod_subway_81-502.Buttons.ALSPanel.!ALS_40            = @[Common.ARS.40]
 Entities.gmod_subway_81-502.Buttons.ALSPanel.!ALS_00            = @[Common.ARS.0]
 Entities.gmod_subway_81-502.Buttons.ALSPanel.!ALS_04            = @[Common.ARS.04]
-
 Entities.gmod_subway_81-502.Buttons.Lamps2_1.!CPS_KS            = @[Common.502.KS]
 Entities.gmod_subway_81-502.Buttons.Lamps2_1.!CPS_AV            = @[Common.502.AV]
 Entities.gmod_subway_81-502.Buttons.Lamps2_1.!CPS_4             = @[Common.502.L4w]
@@ -106,7 +95,6 @@ Entities.gmod_subway_81-502.Buttons.Lamps2_2.!ALS_40            = @[Common.ARS.4
 Entities.gmod_subway_81-502.Buttons.Lamps2_2.!ALS_60            = @[Common.ARS.60]
 Entities.gmod_subway_81-502.Buttons.Lamps2_2.!ALS_70            = @[Common.ARS.70]
 Entities.gmod_subway_81-502.Buttons.Lamps2_2.!ALS_80            = @[Common.ARS.80]
-
 Entities.gmod_subway_81-502.Buttons.Main1.2:VUSToggle           = @[Common.ALL.VF2]
 Entities.gmod_subway_81-502.Buttons.Main1.2:HeadlightsToggle    = @[Common.ALL.VF1]
 Entities.gmod_subway_81-502.Buttons.Main1.!LKTLight             = @[Common.ARS.KT]
@@ -127,7 +115,6 @@ Entities.gmod_subway_81-502.Buttons.Main1.2:VAKSet              = @[Common.502.V
 Entities.gmod_subway_81-502.Buttons.Main1.2:VUDToggle           = @[Common.ALL.VUD]
 Entities.gmod_subway_81-502.Buttons.Main1_2.!LMK2               = @[Common.502.L23w]
 Entities.gmod_subway_81-502.Buttons.Main1_2.!LVRD2              = @[Common.ARS.LRD]
-
 Entities.gmod_subway_81-502.Buttons.Main2.KOSSet                = @[Common.502.KOS]
 Entities.gmod_subway_81-502.Buttons.Main2.!LMK                  = @[Common.502.L23w]
 Entities.gmod_subway_81-502.Buttons.Main2.VZPToggle             = @[Common.ALL.VZP]
@@ -148,13 +135,11 @@ Entities.gmod_subway_81-502.Buttons.Main2.VUSToggle             = @[Common.ALL.V
 Entities.gmod_subway_81-502.Buttons.Main2.VAKSet                = @[Common.502.VAK]
 Entities.gmod_subway_81-502.Buttons.Main2.AutodriveToggle       = @[Common.ALL.VAV]
 Entities.gmod_subway_81-502.Buttons.Main2.VUDToggle             = @[Common.ALL.VUD]
-
 Entities.gmod_subway_81-502.Buttons.BPS.!BPSon                  = @[Common.BPS.On]
 Entities.gmod_subway_81-502.Buttons.BPS.!BPSErr                 = @[Common.BPS.Err]
 Entities.gmod_subway_81-502.Buttons.BPS.!BPSFail                = @[Common.BPS.Fail]
 Entities.gmod_subway_81-502.Buttons.NMnUAVA.!NMPressureLow      = @[Commom.NMnUAVA.NMPressureLow]
 Entities.gmod_subway_81-502.Buttons.NMnUAVA.!UAVATriggered      = @[Commom.NMnUAVA.UAVATriggered]
-
 Entities.gmod_subway_81-502.Buttons.Stopkran.EmergencyBrakeValveToggle                      = @[Common.ALL.EmergencyBrakeValve]
 Entities.gmod_subway_81-502.Buttons.ParkingBrake.ParkingBrakeLeft                           = @[Common.703.ParkingBrakeLeft]
 Entities.gmod_subway_81-502.Buttons.ParkingBrake.ParkingBrakeRight                          = @[Common.703.ParkingBrakeRight]
@@ -173,14 +158,12 @@ Entities.gmod_subway_81-502.Buttons.PassengerDoor1.PassengerDoor                
 Entities.gmod_subway_81-502.Buttons.FrontDoor.FrontDoor                                     = @[Common.ALL.FrontDoor]
 Entities.gmod_subway_81-502.Buttons.RearDoor.RearDoor                                       = @[Common.ALL.RearDoor]
 Entities.gmod_subway_81-502.Buttons.CabinDoor.CabinDoor                                     = @[Common.ALL.CabinDoor]
-
 Entities.gmod_subway_81-502.Buttons.Route.RouteNumber1+                  = @[Common.ALL.RouteNumber1+]
 Entities.gmod_subway_81-502.Buttons.Route.RouteNumber2+                  = @[Common.ALL.RouteNumber2+]
 Entities.gmod_subway_81-502.Buttons.Route.RouteNumber3+                  = @[Common.ALL.RouteNumber3+]
 Entities.gmod_subway_81-502.Buttons.Route.RouteNumber1-                  = @[Common.ALL.RouteNumber1-]
 Entities.gmod_subway_81-502.Buttons.Route.RouteNumber2-                  = @[Common.ALL.RouteNumber2-]
 Entities.gmod_subway_81-502.Buttons.Route.RouteNumber3-                  = @[Common.ALL.RouteNumber3-]
-
 Entities.gmod_subway_81-502.Buttons.BLTLPressure.!BLTLPressure           = @[Common.ALL.BLTLPressure]
 Entities.gmod_subway_81-502.Buttons.BCPressure.!BCPressure               = @[Common.ALL.BCPressure]
 Entities.gmod_subway_81-502.Buttons.HVMeters.!EnginesVoltage             = @[Common.ALL.EnginesVoltage]
@@ -237,7 +220,7 @@ Entities.gmod_subway_81-501.Buttons.BCPressure.!BCPressure               = @[Com
 Entities.gmod_subway_81-501.Buttons.HVMeters.!EnginesVoltage             = @[Common.ALL.EnginesVoltage]
 Entities.gmod_subway_81-501.Buttons.HVMeters.!EnginesCurrent             = @[Common.ALL.EnginesCurrent]
 #Cameras:
-Train.502.AV = Wyłączniki
+Train.502.AV = Schalter
 Train.502.VBA = @[Entities.gmod_subway_81-502.Buttons.VBA.VBAToggle]
 Train.502.VRD = VRD
 Train.502.RCARS = RC-ARS
@@ -245,6 +228,5 @@ Train.502.RCAV5 = RC-AV5
 Train.502.RCBPS = RC-BPС
 Train.502.RCAV3 = RC-AV3
 Train.502.RCAV4 = RC-AV4
-
 #Spawner:
 ]]
